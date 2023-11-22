@@ -15,8 +15,11 @@ jobs:
       with:
         node-version: '14'  
 
-    - name: Imprimir Nombre Completo
+    - name: Nombre
       run: echo "Octavio Valdez"
+      
+    - name: Node Version
+      run: node --version
 
-    - name: Imprimir Expediente
+    - name: Expediente
       run: echo "712153"
