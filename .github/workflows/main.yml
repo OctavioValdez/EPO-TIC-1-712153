@@ -1,0 +1,22 @@
+name: Imprimir nombre y expediente
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  imprimir:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Configurar Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '14'  
+
+    - name: Imprimir Nombre Completo
+      run: echo "Octavio Valdez"
+
+    - name: Imprimir Expediente
+      run: echo "712153"
